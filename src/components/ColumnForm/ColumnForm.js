@@ -3,14 +3,14 @@ import { useState } from 'react';
 
 const ColumnForm = props => {
     const [value, setValue] = useState('');
-    const handleSubmit = e => {
+    const addColumn = e => {
         e.preventDefault();
-        props.handleSubmit({ title: value });
+        props.action({ title: value });
         setValue('');
     }
 
 	return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={addColumn}>
             <input type="text" value={value} onChange={e => setValue(e.target.value)} />
             <button>Add column</button>
         </form>

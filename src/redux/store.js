@@ -2,22 +2,20 @@ import { createStore } from 'redux';
 import initialState from './initialState';
 import shortid from 'shortid';
 
-
-
-  //if(action.type === 'ADD_CARD) return {...state, cards: [...state.cards, action.neCard]}
-
-
 const reducer = (state, action) => {
   switch(action.type) {
     case 'ADD_COLUMN':
       return { ...state, columns: [...state.columns, { ...action.payload, id: shortid() }]};
       
-        case 'ADD_CARD': 
-        return {...state, cards: [...state.cards, {...action.payload, id: shortid()}]};
+    case 'ADD_CARD': 
+      return {...state, cards: [...state.cards, {...action.payload, id: shortid()}]};
+
+    case 'UPDATE_SEARCHSTRING':
+      return { ...state, search: action.payload };
+      
     default:
       return state;
-  
-}
+  }
 }
 
 const store = createStore(

@@ -26,7 +26,7 @@ const initialState = {
       { id: 5, columnId: 3, title: 'The Witcher' },
       { id: 6, columnId: 3, title: 'Skyrim' }
     ],
-    search: '',
+    searchString: '',
   };
   
   export default initialState;

@@ -3,12 +3,10 @@ import PageTitle from '../PageTitle/PageTitle'
 
 const Favorite = () => {
     return (
-        <section>
-            <container>
-                <PageTitle>favorite</PageTitle>
-                <div>lalala</div>
-            </container>
-        </section>
+        <div>
+            <PageTitle>favorite</PageTitle>
+            <div>lalala</div>
+        </div>
     )  
 }
 

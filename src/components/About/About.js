@@ -3,12 +3,10 @@ import PageTitle from '../PageTitle/PageTitle'
 
 const About = () => {
     return (
-        <section>
-            <container>
-                <PageTitle>about</PageTitle>
-                <div>lalala</div>
-            </container>
-        </section>
+        <div>
+            <PageTitle>about</PageTitle>
+            <div>lalala</div>
+        </div>
     )  
 }
 

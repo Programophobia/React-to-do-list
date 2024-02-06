@@ -7,9 +7,11 @@ export const getFilteredCards = ({ cards, searchString }, columnId) => cards
  .filter(card => card.columnId === columnId && strContains(card.title, searchString));
 export const getAllColumns = state => state.columns;
 export const addColumn = payload => ({ type: 'ADD_COLUMN', payload });
-export const addCard = payload => ({ type: 'ADD_CARD', payload})
-export const updateSearchstring = payload => ({ type: 'UPDATE_SEARCHSTRING', payload})
-
+export const addCard = payload => ({ type: 'ADD_CARD', payload});
+export const updateSearchstring = payload => ({ type: 'UPDATE_SEARCHSTRING', payload});
+export const getListById = ({lists}, listId) => lists.find(list => list.id === listId);
+export const getColumnsByList = ({columns}, listId) => columns.filter(column => column.listId === listId);
+export const getAllLists=(state) =>  state.lists; 
 
 const reducer = (state, action) => {
   switch(action.type) {

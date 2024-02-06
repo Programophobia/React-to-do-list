@@ -24,6 +24,7 @@
     & a {
         text-decoration: none;
         color: rgb(241, 240, 240);
+        font-weight: bolder;
     }
     
     & ul {
@@ -32,4 +33,7 @@
         justify-content: space-between;
         align-items: center;
     }
+.linkActive{
+    color: #26de81;
+} 
 }

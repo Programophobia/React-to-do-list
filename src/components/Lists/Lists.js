@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux';
 import { getAllLists } from '../../redux/store';
 import styles from './Lists.module.scss'
 import { Link } from 'react-router-dom';
+import NewList from '../NewList/NewList';
 
 const Lists = () => {
 
@@ -15,6 +16,7 @@ const Lists = () => {
               <p>{list.description}</p>
             </Link>
           ))}
+          <NewList />
         </section>
       );
 }

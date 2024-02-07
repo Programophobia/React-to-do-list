@@ -11,7 +11,7 @@ const SearchForm = () => {
     
     const handle = e => {
         e.preventDefault();
-        dispatch(updateSearchstring( {title}));
+        //dispatch(updateSearchstring( {title}));
         dispatch(updateSearchstring( title ));
         setTitle('');
     }   

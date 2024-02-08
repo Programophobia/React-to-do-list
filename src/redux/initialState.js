@@ -21,11 +21,10 @@ const initialState = {
         
       },
       {
-        id: 3,
+        id: 4,
         listId: '2',
-        title: 'Food',
-        icon: 'qq',
-        
+        title: 'Asia',
+        icon: 'spoon', 
       }
 
     ],
@@ -36,7 +35,8 @@ const initialState = {
       { id: 3, columnId: 2, title: 'Harry Potter', isFavorite: false },
       { id: 4, columnId: 2, title: 'Star Wars', isFavorite: false },
       { id: 5, columnId: 3, title: 'The Witcher', isFavorite: false },
-      { id: 6, columnId: 3, title: 'Skyrim', isFavorite: false }
+      { id: 6, columnId: 3, title: 'Skyrim', isFavorite: false },
+      { id: 7, columnId: 4, title: 'Yellow Curry', isFavorite: true }
     ],
 
     lists: [
@@ -47,9 +47,10 @@ const initialState = {
       },
      {
         id: '2',
-        title: 'Test list',
-        description: 'Lorem Ipsum'
-     }
+        title: 'Things to eat...',
+        description: 'mmmmmmm'
+     },
+
   ],
    searchString: '',
   };

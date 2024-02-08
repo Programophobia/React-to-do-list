@@ -1,1 +1,34 @@
+@use "sass:math";
 @import '../../styles/settings.scss';
+
+.wrappper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorite {
+ 
+  background: #26de81;
+  margin: 20px;
+  padding: 10px;
+  color:#0a0a0a;
+  border-radius: 5%;
+  width:fit-content;
+
+    .card {
+        padding: 20px;
+    }
+    span {
+        font-size: 30px;
+        color:black;
+        font-weight: bold;
+    }
+}
+
+i {
+  color: rgb(9, 9, 9);
+  font-size: 35px;
+}
+

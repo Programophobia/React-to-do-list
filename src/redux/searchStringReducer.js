@@ -1,5 +1,5 @@
 export const getSearchString = (state) => state.searchString;
-export const updateSearchstring = payload => ({ type: UPDATE_SEARCHSTRING, payload});
+export const updateSearchString = payload => ({ type: UPDATE_SEARCHSTRING, payload});
 
 const createActionName = actionName => `app/SearchString/${actionName}`;
 const UPDATE_SEARCHSTRING = createActionName('UPDATE_SEARCHSTRING');

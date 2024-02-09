@@ -1,12 +1,14 @@
 import shortid from "shortid";
 import strContains from '../utils/strContains'
 
+export const toggleCardFavorite = payload => ({ type: TOGGLE_CARD_FAVORITE, payload });
+export const removeCard = payload => ({ type: REMOVE_CARD, payload });
 export const addCard = payload => ({ type: ADD_CARD, payload});
+
 export const getFilteredCards = ({ cards, searchString }, columnId) => cards
 .filter(card => card.columnId === columnId && strContains(card.title, searchString));
-export const toggleCardFavorite = payload => ({ type: TOGGLE_CARD_FAVORITE, payload });
 export const getFavoriteCards = (state) => state.cards.filter(card => card.isFavorite);
-export const removeCard = payload => ({ type: REMOVE_CARD, payload });
+
 
 const createActionName = actionName => `app/cards/${actionName}`;
 const ADD_CARD = createActionName('ADD_CARD');

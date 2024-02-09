@@ -6,8 +6,8 @@ const NavBar = () => {
         <nav className={styles.navigation}>
             <a href="/"><i className="fa fa-tasks"></i></a>
             <ul className={styles.menu}>
-                <li><NavLink className={({isActive }) => isActive ? styles.linkActive : undefined} to="/">HOME</NavLink></li>
-                <li><NavLink className={({isActive}) => isActive ? styles.linkActive : undefined} to="/favorite">FAVORITE</NavLink></li>
+                <li><NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined} to="/">HOME</NavLink></li>
+                <li><NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined} to="/favorite">FAVORITE</NavLink></li>
                 <li><NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined} to="/about">ABOUT</NavLink></li>
             </ul>
         </nav>

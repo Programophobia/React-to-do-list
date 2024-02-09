@@ -10,7 +10,7 @@ const Favorite = () => {
     return (
      <div className={styles.wrappper}>
         <PageTitle>Favorite</PageTitle>
-      <div className={styles.favorite}><span><i className="fa fa-star-o"></i> MY FAVOURITE:</span>
+      <div className={styles.favorite}><span>MY FAVOURITE:</span>
           <ul className={styles.card}>
             {favoriteCards.map(card => <Card key={card.id} id={card.id} card={card} isFavorite={card.isFavorite} title={card.title} />)}
           </ul>

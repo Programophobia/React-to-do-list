@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Button from '../Button/Button';
 import TextInput from '../TextInput/TextInput';
 import { useDispatch } from 'react-redux';
-import { addList } from '../../redux/store'; //Kreator akcji
+import { addList } from '../../redux/listsRedux';
 
 const NewList= props => {
     const [title, setTitle] = useState('');

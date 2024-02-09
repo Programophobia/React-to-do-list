@@ -3,20 +3,18 @@ import TextInput from '../TextInput/TextInput';
 import Button from '../Button/Button';
 import { useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
-import { updateSearchstring, getSearchString } from '../../redux/store';
+import { updateSearchstring, getSearchString } from '../../redux/searchStringReducer';
+
 
 const SearchForm = () => {
     const dispatch = useDispatch();
     const [title, setTitle] = useState('');
     const searchReset  = useSelector(getSearchString)
-
-    
+ 
     const handle = e => {
         e.preventDefault();
-        //dispatch(updateSearchstring( {title}));
         dispatch(updateSearchstring( title ));
-        setTitle('');
-        
+        setTitle('');     
     }   
 
     return (

@@ -3,6 +3,7 @@ import PageTitle from '../PageTitle/PageTitle'
 import Card from '../Card/Card';
 import { useSelector } from 'react-redux';
 import { getFavoriteCards } from '../../redux/cardsReducer';
+
 const Favorite = () => {
 
     const favoriteCards = useSelector(state => getFavoriteCards(state));
@@ -18,5 +19,4 @@ const Favorite = () => {
       </div>
     );
   }
-
-export default Favorite
+  export default Favorite

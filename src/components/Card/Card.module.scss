@@ -24,3 +24,10 @@ i:hover {
 i {
     margin: 5px;
 }
+
+.isFavorite {
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #26de81;
+    border-radius: 50%;
+    cursor: pointer;
+}

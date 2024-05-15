@@ -24,6 +24,10 @@
     & a {
         text-decoration: none;
         color: rgb(241, 240, 240);
+<<<<<<< HEAD
+=======
+        font-weight: bolder;
+>>>>>>> 659d3454523a7c1948d618694961ae18927c92a1
     }
     
     & ul {
@@ -32,4 +36,10 @@
         justify-content: space-between;
         align-items: center;
     }
+<<<<<<< HEAD
+=======
+.linkActive{
+    color: #26de81;
+} 
+>>>>>>> 659d3454523a7c1948d618694961ae18927c92a1
 }

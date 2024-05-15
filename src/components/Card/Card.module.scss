@@ -10,4 +10,24 @@
     display: flex;
     justify-content: space-between;
     font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+i:hover {
+    transform: scale(2); 
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #26de81;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+i {
+    margin: 5px;
+}
+
+.isFavorite {
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #26de81;
+    border-radius: 50%;
+    cursor: pointer;
 }

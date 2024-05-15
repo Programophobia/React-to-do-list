@@ -1,1 +1,39 @@
+<<<<<<< HEAD
 @import '../../styles/settings.scss';
+=======
+@use "sass:math";
+@import '../../styles/settings.scss';
+
+.wrappper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorite {
+ 
+  background: #26de81;
+  margin: 20px;
+  padding: 10px;
+  color:#0a0a0a;
+  border-radius: 5%;
+  width:fit-content;
+  text-align: center;
+
+    .card {
+        padding: 20px;
+        font-size: 15px;
+    }
+    span {
+        font-size: 20px;
+        color:black;
+        font-weight: bold;
+    }
+}
+
+li {
+    text-align: center;
+    padding: 10px;
+}
+>>>>>>> 659d3454523a7c1948d618694961ae18927c92a1
